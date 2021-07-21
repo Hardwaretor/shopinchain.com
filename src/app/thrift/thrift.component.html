@@ -1,0 +1,46 @@
+<div class="row">
+<mat-form-field>
+  <mat-label >Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+</mat-form-field>
+
+  <button fxFlex="25%" mat-button><img src="assets/mas2.png" class="addbuttom"></button>
+  <button fxFlex="25%" mat-button><img src="assets/mas2.png" class="addbuttom"></button>
+
+</div>
+
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="10px grid">
+
+    <mat-card-content fxFlex="20%" *ngFor="let product of products">
+      <div class="products">
+        <button mat-button (click)="toggle()" color="primary"><img class="image" src={{product.image}}></button>
+    
+        <h2>{{product.name}}</h2>
+        <h4 [@bodyExpansion]="state" class="expandable-content">{{product.description}}</h4>
+        <h2>{{product.price}}<img class="imagepay" src="assets/teter.png">
+          {{product.price}}<img class="imagepay" src="assets/btc.png">
+          {{product.price}}<img class="imagepay" src="assets/eth.png">
+          {{product.price}}<img class="imagepay" src="assets/bnb.png">
+          {{product.price}}<img class="imagepay" src="assets/uni.png">
+        </h2>
+        <mat-card-actions [@bodyExpansion]="state" class="expandable-content">
+          <button fxFlex="33.3333%" mat-button class="actionbuttom" >
+            <mat-icon>local_offer</mat-icon>
+          </button>
+          <button fxFlex="33.3333%" mat-button class="actionbuttom">
+            <mat-icon>connect_without_contact</mat-icon>
+          </button>
+          <button fxFlex="33.3333%" mat-button class="actionbuttom">
+            <mat-icon>shopping_cart</mat-icon>
+          </button>
+        </mat-card-actions>
+      </div>
+    </mat-card-content>
+  </div>
+</div>
+
+<mat-paginator [length]="5"
+[pageSize]="5"
+[pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>

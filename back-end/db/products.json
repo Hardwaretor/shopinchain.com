@@ -1,0 +1,535 @@
+{
+  "products": [
+    {
+      "name": "Luxury table - 1",
+      "price": 23.54,
+      "image": "/assets/products/mesa gotas negra y verde.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 2",
+      "price": 23.54,
+      "image": "/assets/products/lampara trans blanca azul.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 3",
+      "price": 23.54,
+      "image": "/assets/products/mesa gotas azul y aluminio.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 4",
+      "price": 23.54,
+      "image": "/assets/products/lampara trans verde azul.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 5",
+      "price": 23.54,
+      "image": "/assets/products/mesa cuadrados colores.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 6",
+      "price": 23.54,
+      "image": "/assets/products/lampara trans azul madera.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 7",
+      "price": 23.54,
+      "image": "/assets/products/mesa onda roja platapng.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 8",
+      "price": 23.54,
+      "image": "/assets/products/lampara trans amarilla.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 9",
+      "price": 23.54,
+      "image": "/assets/products/mesa trenza azul y verde.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 10",
+      "price": 23.54,
+      "image": "/assets/products/lampara prismas.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 11",
+      "price": 23.54,
+      "image": "/assets/products/mesa trenza azul y blanca.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - 12",
+      "price": 23.54,
+      "image": "/assets/products/lampara trans verde roja.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa espiral negro y azul.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa espiral negro y rojo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa espiral morado.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa espiral verde.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa motas naranja y negro.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa motas azul y negro.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa motas verdes.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa motas azules.png",
+      "description": "Resin and wood, totally customizable"
+    },
+
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa ajedrezpng.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/lampara trans morada blanca.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa cuadrados madera.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa luxury ondas colores.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa luxury ondas madera trans.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa onda españa.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa onda purple.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 2 azul.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 2 verde.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 2 amarillo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 2 rojo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 1 rojo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 1 verde.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 1 morado.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Lavabo 1 azul.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa bamboo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa biblia.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa virgen de la cabeza 2.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa virgen de la cabeza blue.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa virgen de la cabeza.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa virgen de los dolores .png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa buda aluminio.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa buda.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa caballo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa vikingo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa calavera.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa calaveras.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa calendario azteca aluminio.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa calendario azteca trans.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa camaron 2.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa camaron.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa china.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa cosmonauta .png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa craneo home.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa donquijote.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa dragon.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa faraon.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa flores.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa fornite.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa freezer.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa ganesh 2 .png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa ganesh.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa griego.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa guerrero chino.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa guerrero.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa hombre aguila.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa indonesia.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa jesucristo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa monserrat.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa mujer.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa mundo.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa nefertiti.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa pajaros azul.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa pajaros.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa piramide.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa religiosa 1.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa religiosa 2.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa religiosa 3.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa religioso 4.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa tesla.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa tibetana.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa toro.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa troopers.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa vader .png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa vegeta espaldas.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/mesa vegeta.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa yoda.png",
+      "description": "Resin and wood, totally customizable"
+    },
+    {
+      "name": "Luxury table - Ajedrez Madera",
+      "price": 23.54,
+      "image": "/assets/products/Mesa angel aluminio.png",
+      "description": "Resin and wood, totally customizable"
+    }
+
+  ]
+
+}

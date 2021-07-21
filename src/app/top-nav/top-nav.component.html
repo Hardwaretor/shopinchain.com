@@ -1,0 +1,70 @@
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar-row>
+      
+    </mat-toolbar-row>
+    <mat-nav-list>
+
+      <mat-list-item [routerLink]="['/home']">
+        <mat-icon>home </mat-icon>
+          Home
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/account']">
+        <mat-icon>account_balance_wallet </mat-icon>
+          Wallet
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/thrift']">
+        <mat-icon>shop </mat-icon>
+          Thrift Shop
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/parcels']">
+        <mat-icon>view_in_ar </mat-icon>
+          Parcels
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/nft']">
+        <mat-icon>flutter_dash </mat-icon>
+          NFT's
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/games']">
+        <mat-icon>sports_esports </mat-icon>
+          Games
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/projects']">
+        <mat-icon>flight_takeoff </mat-icon>
+          Projects
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/news']">
+        <mat-icon>new_releases </mat-icon>
+          News
+      </mat-list-item>
+
+    </mat-nav-list>
+  </mat-sidenav>
+ <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span class="example-spacer"></span>
+        Beta v1.0 - Ghost Mode
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

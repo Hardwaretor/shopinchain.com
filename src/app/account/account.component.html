@@ -1,0 +1,52 @@
+
+<div class="body">
+  <mat-card class="account">
+
+    <button mat-raised-button color="accent" class="big-round-shape-button" (click)="connectAccount()"> Get Account</button>
+
+    <div style="text-align:center">
+      <section class="header">
+        <img [src]="message" class="profile" />
+        <h3>Your address is:  {{ direction }} </h3>
+      </section>
+
+      <form>
+        <div class="container">
+        <div class="tab"> <span class="tab-right">{{balance}} ETH </span></div>
+        <div class="tab"> <span class="tab-right">{{balance2}} SHOP</span></div>
+          <hr>
+      
+          <label for="transfer"><b>Tranfer To</b></label>
+          <input type="text" class="inputfield" placeholder="Transfer To"  [(ngModel)]="destinyAccount" name="destinyAccount" required>
+      
+          <label for="amount"><b>Amount in Ether</b></label>
+          <input type="text"  class="inputfield" placeholder="Enter Amount"  [(ngModel)]="amount" name="amount" required>
+      
+          <label for="remarts"><b>Remarks</b></label>
+          <textarea  class="inputfield" placeholder="Enter Remarks" name="remarks" required   [(ngModel)]="remarks" ></textarea>
+          <hr>
+          <button type="reset" class="trfbtn resetbtn">Reset</button>&nbsp;&nbsp;
+          <button type="submit" class="trfbtn" (click)="transferEther($event)">Transfer Ether</button>&nbsp;&nbsp;
+        </div>
+      </form>
+
+    </div>
+
+  </mat-card>
+</div>
+<div class="body" *ngIf="direction == undefined">
+  <mat-card class="account">
+
+    <div style="text-align:center">
+      <section class="header">
+
+        <div class="button-container">
+          &nbsp;
+          <button mat-raised-button color="accent" class="big-round-shape-button" (click)="navigateTo()"> Get MetaMask</button>
+        </div>
+        &nbsp;
+      </section>
+    </div>
+
+  </mat-card>
+</div>

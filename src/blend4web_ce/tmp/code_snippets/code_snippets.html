@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Code Snippets | Blend4Web</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<meta name="description" content="This app demonstrates Blend4Web functionality and API.">
+
+<link href="code_snippets.css" rel="stylesheet" type="text/css">
+<link href="github.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="/tmp/code_snippets/b4w_app_bundle.js" b4w-offset="../../deploy/"> </script>
+<script type="text/javascript" src="highlight.pack.js"></script>
+
+<script type="text/javascript" src="scripts/libs/leap-0.6.4.min.js"></script>
+
+</head>
+
+<body>
+  <div id="main_canvas_container" oncontextmenu="return false"></div>
+  <div id="wrapper" class="active">
+    <div id="schedule"></div>
+    <div id="interface">
+      <a class="btn" id="open_script" target="_blank">View Code</a>
+      <a class="btn" id="auto_view" target="_self">Auto View</a>
+      <a class="btn" id="clone_snippet" target="_self">Make Project</a>
+    </div>
+  </div>
+  <div id="code_panel">
+    <table>
+      <tr>
+        <th>
+          <h3>HTML</h3>
+        </th>
+        <th>
+          <h3>JavaScript</h3>
+          <div id="code_close"></div>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <pre><code id="code_text_html" data-language="html"></code></pre>
+          </div>
+        </td>
+        <td>
+          <div>
+            <pre><code id="code_text_js" data-language="javascript"></code></pre>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="clone_panel">
+    <form action="/project/clone_snippet/" method="get" accept-charset="utf-8">
+      <div>
+        <input type="text" name="new_proj_name" id="new_proj_name" required="" placeholder="New project name">
+        <input type="hidden" name="snippet_name" id="snippet_name">
+      </div>
+      <div class="btn" id="close_clone">Cancel</div>
+      <input type="submit" name="Clone" class="btn" value="Make">
+    </form>
+  </div>
+  <div id="top_switcher"><div class="arrow"></div></div>
+</body>
+
+</html>
