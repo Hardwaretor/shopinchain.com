@@ -1,0 +1,44 @@
+
+
+
+.mat-drawer-container {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow: hidden;
+  min-height: 700px;
+  background-image: url("../../assets/background.png");
+}
+
+.mat-sidenav {
+
+position: absolute;
+width: 10%;
+min-height: 700px;
+
+}
+
+.mat-toolbar.mat-primary {
+  background: rgb(0, 0, 0);
+  color: #fff;
+
+}
+
+
+.mat-drawer {
+  background-image: url("../../assets/background2.png");
+  color: rgb(255, 255, 255);
+}
+
+.mat-list-base .mat-list-item {
+  color: rgb(0, 0, 0);
+
+}
+
+.mat-toolbar {
+  background: rgb(0, 0, 0);
+  color: #fff;
+
+}

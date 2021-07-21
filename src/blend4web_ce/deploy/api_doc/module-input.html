@@ -1,0 +1,11839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Module: input | Blend4Web API Reference</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Module: input</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">Low-level input device API.
+For more generic cases use <a href="module-controls.html">sensor-based API</a>.</div>
+        
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+</div>
+<div class="item_description">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line12">line 12</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+    <h2>Summary</h2>
+    
+        <h3 class="subsection-title">Members</h3>
+        <ul>
+        
+            
+<li> <a href="#.DEVICE_GYRO">DEVICE_GYRO</a></li>
+
+        
+            
+<li> <a href="#.DEVICE_HMD">DEVICE_HMD</a></li>
+
+        
+            
+<li> <a href="#.DEVICE_KEYBOARD">DEVICE_KEYBOARD</a></li>
+
+        
+            
+<li> <a href="#.DEVICE_MOUSE">DEVICE_MOUSE</a></li>
+
+        
+            
+<li> <a href="#.DEVICE_TOUCH">DEVICE_TOUCH</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_0">GMPD_AXIS_0</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_1">GMPD_AXIS_1</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_2">GMPD_AXIS_2</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_3">GMPD_AXIS_3</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_4">GMPD_AXIS_4</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_5">GMPD_AXIS_5</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_6">GMPD_AXIS_6</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_7">GMPD_AXIS_7</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_8">GMPD_AXIS_8</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_9">GMPD_AXIS_9</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_10">GMPD_AXIS_10</a></li>
+
+        
+            
+<li> <a href="#.GMPD_AXIS_11">GMPD_AXIS_11</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_0">GMPD_BUTTON_0</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_1">GMPD_BUTTON_1</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_2">GMPD_BUTTON_2</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_3">GMPD_BUTTON_3</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_4">GMPD_BUTTON_4</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_5">GMPD_BUTTON_5</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_6">GMPD_BUTTON_6</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_7">GMPD_BUTTON_7</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_8">GMPD_BUTTON_8</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_9">GMPD_BUTTON_9</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_10">GMPD_BUTTON_10</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_11">GMPD_BUTTON_11</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_12">GMPD_BUTTON_12</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_13">GMPD_BUTTON_13</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_14">GMPD_BUTTON_14</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_15">GMPD_BUTTON_15</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_16">GMPD_BUTTON_16</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_17">GMPD_BUTTON_17</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_18">GMPD_BUTTON_18</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_19">GMPD_BUTTON_19</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_20">GMPD_BUTTON_20</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_21">GMPD_BUTTON_21</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_22">GMPD_BUTTON_22</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_23">GMPD_BUTTON_23</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_24">GMPD_BUTTON_24</a></li>
+
+        
+            
+<li> <a href="#.GMPD_BUTTON_25">GMPD_BUTTON_25</a></li>
+
+        
+            
+<li> <a href="#.GMPD_GRIPS_BUTTON">GMPD_GRIPS_BUTTON</a></li>
+
+        
+            
+<li> <a href="#.GMPD_MENU_BUTTON">GMPD_MENU_BUTTON</a></li>
+
+        
+            
+<li> <a href="#.GMPD_TRACKPAD_BUTTON">GMPD_TRACKPAD_BUTTON</a></li>
+
+        
+            
+<li> <a href="#.GMPD_TRIGGER_BUTTON">GMPD_TRIGGER_BUTTON</a></li>
+
+        
+            
+<li> <a href="#.GYRO_ORIENTATION_ANGLES">GYRO_ORIENTATION_ANGLES</a></li>
+
+        
+            
+<li> <a href="#.GYRO_ORIENTATION_QUAT">GYRO_ORIENTATION_QUAT</a></li>
+
+        
+            
+<li> <a href="#.HMD_BASELINE_DIST">HMD_BASELINE_DIST</a></li>
+
+        
+            
+<li> <a href="#.HMD_BEVEL_SIZE">HMD_BEVEL_SIZE</a></li>
+
+        
+            
+<li> <a href="#.HMD_DISTORTION">HMD_DISTORTION</a></li>
+
+        
+            
+<li> <a href="#.HMD_EYE_DISTANCE">HMD_EYE_DISTANCE</a></li>
+
+        
+            
+<li> <a href="#.HMD_NON_WEBVR">HMD_NON_WEBVR</a></li>
+
+        
+            
+<li> <a href="#.HMD_ORIENTATION_QUAT">HMD_ORIENTATION_QUAT</a></li>
+
+        
+            
+<li> <a href="#.HMD_POSITION">HMD_POSITION</a></li>
+
+        
+            
+<li> <a href="#.HMD_SCREEN_HEIGHT">HMD_SCREEN_HEIGHT</a></li>
+
+        
+            
+<li> <a href="#.HMD_SCREEN_LENS_DIST">HMD_SCREEN_LENS_DIST</a></li>
+
+        
+            
+<li> <a href="#.HMD_SCREEN_WIDTH">HMD_SCREEN_WIDTH</a></li>
+
+        
+            
+<li> <a href="#.HMD_WEBVR1">HMD_WEBVR1</a></li>
+
+        
+            
+<li> <a href="#.HMD_WEBVR1_1">HMD_WEBVR1_1</a></li>
+
+        
+            
+<li> <a href="#.HMD_WEBVR_DESKTOP">HMD_WEBVR_DESKTOP</a></li>
+
+        
+            
+<li> <a href="#.HMD_WEBVR_MOBILE">HMD_WEBVR_MOBILE</a></li>
+
+        
+            
+<li> <a href="#.HMD_WEBVR_TYPE">HMD_WEBVR_TYPE</a></li>
+
+        
+            
+<li> <a href="#.KEYBOARD_DOWN">KEYBOARD_DOWN</a></li>
+
+        
+            
+<li> <a href="#.KEYBOARD_UP">KEYBOARD_UP</a></li>
+
+        
+            
+<li> <a href="#.MOUSE_DOWN_WHICH">MOUSE_DOWN_WHICH</a></li>
+
+        
+            
+<li> <a href="#.MOUSE_LOCATION">MOUSE_LOCATION</a></li>
+
+        
+            
+<li> <a href="#.MOUSE_UP_WHICH">MOUSE_UP_WHICH</a></li>
+
+        
+            
+<li> <a href="#.MOUSE_WHEEL">MOUSE_WHEEL</a></li>
+
+        
+            
+<li> <a href="#.TOUCH_END">TOUCH_END</a></li>
+
+        
+            
+<li> <a href="#.TOUCH_MOVE">TOUCH_MOVE</a></li>
+
+        
+            
+<li> <a href="#.TOUCH_START">TOUCH_START</a></li>
+
+        
+        </ul>
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        <ul>
+        
+            
+<li> <a href="#.add_click_listener">add_click_listener<span class="signature">(element, callback)</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.attach_param_cb">attach_param_cb<span class="signature">(device, param, cb<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.can_use_device">can_use_device<span class="signature">(type)</span><span class="type-signature"> &rarr; {boolean}</span></a></li>
+
+        
+            
+<li> <a href="#.check_enable_gamepad_indices">check_enable_gamepad_indices<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></a></li>
+
+        
+            
+<li> <a href="#.detach_param_cb">detach_param_cb<span class="signature">(device, param, cb<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.disable_split_screen">disable_split_screen<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></a></li>
+
+        
+            
+<li> <a href="#.enable_split_screen">enable_split_screen<span class="signature">(camobj)</span><span class="type-signature"> &rarr; {boolean}</span></a></li>
+
+        
+            
+<li> <a href="#.get_device_by_type_element">get_device_by_type_element<span class="signature">(type, element<span class="signature-attributes">nullable</span>)</span><span class="type-signature"> &rarr; (nullable) {Object}</span></a></li>
+
+        
+            
+<li> <a href="#.get_gamepad_orientation">get_gamepad_orientation<span class="signature">(gamepad_id, dest)</span><span class="type-signature"> &rarr; {Quat}</span></a></li>
+
+        
+            
+<li> <a href="#.get_gamepad_position">get_gamepad_position<span class="signature">(gamepad_id, dest)</span><span class="type-signature"> &rarr; {Vec3}</span></a></li>
+
+        
+            
+<li> <a href="#.get_moved_gmpd_axis">get_moved_gmpd_axis<span class="signature">(gamepad_id)</span><span class="type-signature"> &rarr; {number}</span></a></li>
+
+        
+            
+<li> <a href="#.get_pressed_gmpd_btn">get_pressed_gmpd_btn<span class="signature">(gamepad_id)</span><span class="type-signature"> &rarr; {number}</span></a></li>
+
+        
+            
+<li> <a href="#.get_value_param">get_value_param<span class="signature">(device, param)</span><span class="type-signature"> &rarr; {number|boolean|null}</span></a></li>
+
+        
+            
+<li> <a href="#.get_vector_param">get_vector_param<span class="signature">(device, param, dest)</span><span class="type-signature"> &rarr; (nullable) {Float32Array}</span></a></li>
+
+        
+            
+<li> <a href="#.get_vr_controller_id">get_vr_controller_id<span class="signature">(controller_id)</span><span class="type-signature"> &rarr; {number}</span></a></li>
+
+        
+            
+<li> <a href="#.register_device">register_device<span class="signature">()</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.remove_click_listener">remove_click_listener<span class="signature">(element, callback)</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.request_fullscreen_hmd">request_fullscreen_hmd<span class="signature">()</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.reset_device">reset_device<span class="signature">(device)</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.set_gamepad_key">set_gamepad_key<span class="signature">(gamepad_id, btn, key)</span><span class="type-signature"></span></a></li>
+
+        
+            
+<li> <a href="#.switch_prevent_default">switch_prevent_default<span class="signature">(device, prevent_default)</span><span class="type-signature"></span></a></li>
+
+        
+        </ul>
+    
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        <ul>
+        
+                
+<li> <a href="#~DeviceConfig">DeviceConfig</a></li>
+
+            
+                
+<li> <a href="#~DeviceHMDType">DeviceHMDType</a></li>
+
+            
+                
+<li> <a href="#~DeviceParameterAsync">DeviceParameterAsync</a></li>
+
+            
+                
+<li> <a href="#~DeviceType">DeviceType</a></li>
+
+            
+                
+<li> <a href="#~DeviceValueParameterSync">DeviceValueParameterSync</a></li>
+
+            
+                
+<li> <a href="#~DeviceVectorParameterSync">DeviceVectorParameterSync</a></li>
+
+            
+                
+<li> <a href="#~GyroscopeAnglesCallback">GyroscopeAnglesCallback<span class="signature">(angles)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~GyroscopeQuatCallback">GyroscopeQuatCallback<span class="signature">(quat)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~KeyboardDownCallback">KeyboardDownCallback<span class="signature">(key_code)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~KeyboardUpCallback">KeyboardUpCallback<span class="signature">(key_code)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~MouseDownWhichCallback">MouseDownWhichCallback<span class="signature">(which)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~MouseLocationCallback">MouseLocationCallback<span class="signature">(location)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~MouseUpWhichCallback">MouseUpWhichCallback<span class="signature">(which)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~MouseWheelCallback">MouseWheelCallback<span class="signature">(delta)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~TouchEndCallback">TouchEndCallback<span class="signature">(touches)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~TouchMoveCallback">TouchMoveCallback<span class="signature">(touches)</span><span class="type-signature"></span></a></li>
+
+            
+                
+<li> <a href="#~TouchStartCallback">TouchStartCallback<span class="signature">(touches)</span><span class="type-signature"></span></a></li>
+
+            
+        </ul>
+    
+    <h2>Detailed Description</h2>
+    
+        <h3 class="subsection-title">Members</h3>
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".DEVICE_GYRO">DEVICE_GYRO</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gyroscope device type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceType">DeviceType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line656">line 656</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".DEVICE_HMD">DEVICE_HMD</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Head mounted device type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceType">DeviceType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line662">line 662</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".DEVICE_KEYBOARD">DEVICE_KEYBOARD</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Keyboard device type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceType">DeviceType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line674">line 674</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".DEVICE_MOUSE">DEVICE_MOUSE</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Mouse device type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceType">DeviceType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line668">line 668</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".DEVICE_TOUCH">DEVICE_TOUCH</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Touch device type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceType">DeviceType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line680">line 680</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_0">GMPD_AXIS_0</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line228">line 228</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_1">GMPD_AXIS_1</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line233">line 233</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_2">GMPD_AXIS_2</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line238">line 238</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_3">GMPD_AXIS_3</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line243">line 243</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_4">GMPD_AXIS_4</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line248">line 248</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_5">GMPD_AXIS_5</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line253">line 253</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_6">GMPD_AXIS_6</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line258">line 258</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_7">GMPD_AXIS_7</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line263">line 263</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_8">GMPD_AXIS_8</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line268">line 268</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_9">GMPD_AXIS_9</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line273">line 273</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_10">GMPD_AXIS_10</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line278">line 278</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_AXIS_11">GMPD_AXIS_11</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad axis.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line283">line 283</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_0">GMPD_BUTTON_0</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad face panel down button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line103">line 103</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_1">GMPD_BUTTON_1</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad face panel right button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line108">line 108</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_2">GMPD_BUTTON_2</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad face panel left button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line113">line 113</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_3">GMPD_BUTTON_3</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad face panel up button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line98">line 98</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_4">GMPD_BUTTON_4</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad left top shoulder button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line128">line 128</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_5">GMPD_BUTTON_5</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad right top shoulder button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line118">line 118</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_6">GMPD_BUTTON_6</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad left bottom shoulder button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line133">line 133</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_7">GMPD_BUTTON_7</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad right bottom shoulder button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line123">line 123</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_8">GMPD_BUTTON_8</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad select/back button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line138">line 138</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_9">GMPD_BUTTON_9</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad start/forward button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_10">GMPD_BUTTON_10</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad left analog button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line148">line 148</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_11">GMPD_BUTTON_11</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad right analog button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line153">line 153</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_12">GMPD_BUTTON_12</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad D-pad up button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line78">line 78</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_13">GMPD_BUTTON_13</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad D-pad down button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line83">line 83</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_14">GMPD_BUTTON_14</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad D-pad left button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line93">line 93</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_15">GMPD_BUTTON_15</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad D-pad right button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line88">line 88</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_16">GMPD_BUTTON_16</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad main button ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line158">line 158</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_17">GMPD_BUTTON_17</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line163">line 163</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_18">GMPD_BUTTON_18</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line168">line 168</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_19">GMPD_BUTTON_19</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line173">line 173</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_20">GMPD_BUTTON_20</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line178">line 178</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_21">GMPD_BUTTON_21</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line183">line 183</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_22">GMPD_BUTTON_22</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line188">line 188</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_23">GMPD_BUTTON_23</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line193">line 193</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_24">GMPD_BUTTON_24</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line198">line 198</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_BUTTON_25">GMPD_BUTTON_25</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad button.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line203">line 203</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_GRIPS_BUTTON">GMPD_GRIPS_BUTTON</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad grips ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line218">line 218</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_MENU_BUTTON">GMPD_MENU_BUTTON</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad grips ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line223">line 223</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_TRACKPAD_BUTTON">GMPD_TRACKPAD_BUTTON</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad track pad ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line208">line 208</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GMPD_TRIGGER_BUTTON">GMPD_TRIGGER_BUTTON</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Gamepad trigger ID.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line213">line 213</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GYRO_ORIENTATION_ANGLES">GYRO_ORIENTATION_ANGLES</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of gyroscope orientation angles.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line440">line 440</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".GYRO_ORIENTATION_QUAT">GYRO_ORIENTATION_QUAT</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of gyroscope orientation quaternion.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line434">line 434</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_BASELINE_DIST">HMD_BASELINE_DIST</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of HMD baseline distance.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceConfig">DeviceConfig</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line350">line 350</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_BEVEL_SIZE">HMD_BEVEL_SIZE</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of mobile bevel size.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceConfig">DeviceConfig</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line374">line 374</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_DISTORTION">HMD_DISTORTION</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of HMD distortion coefficients.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceConfig">DeviceConfig</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line344">line 344</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_EYE_DISTANCE">HMD_EYE_DISTANCE</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of HMD eye distance.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceConfig">DeviceConfig</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line337">line 337</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_NON_WEBVR">HMD_NON_WEBVR</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Non-WebVR HMD
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceHMDType">DeviceHMDType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line319">line 319</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_ORIENTATION_QUAT">HMD_ORIENTATION_QUAT</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of HMD orientation quaternion.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceVectorParameterSync">DeviceVectorParameterSync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line289">line 289</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_POSITION">HMD_POSITION</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of HMD position.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceVectorParameterSync">DeviceVectorParameterSync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line295">line 295</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_SCREEN_HEIGHT">HMD_SCREEN_HEIGHT</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of mobile screen height.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceConfig">DeviceConfig</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line368">line 368</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_SCREEN_LENS_DIST">HMD_SCREEN_LENS_DIST</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of HMD screen to lens distance.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceConfig">DeviceConfig</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line356">line 356</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_SCREEN_WIDTH">HMD_SCREEN_WIDTH</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of mobile screen width.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceConfig">DeviceConfig</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line362">line 362</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_WEBVR1">HMD_WEBVR1</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    WebVR API 1.0
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceHMDType">DeviceHMDType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line325">line 325</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_WEBVR1_1">HMD_WEBVR1_1</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    WebVR API 1.1
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceHMDType">DeviceHMDType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line331">line 331</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_WEBVR_DESKTOP">HMD_WEBVR_DESKTOP</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    WebVR (old) desktop HMD
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceHMDType">DeviceHMDType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line307">line 307</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_WEBVR_MOBILE">HMD_WEBVR_MOBILE</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    WebVR (old) mobile HMD
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceHMDType">DeviceHMDType</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line313">line 313</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".HMD_WEBVR_TYPE">HMD_WEBVR_TYPE</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of HMD type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceValueParameterSync">DeviceValueParameterSync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line301">line 301</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".KEYBOARD_DOWN">KEYBOARD_DOWN</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of the keyboard downed key.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line410">line 410</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".KEYBOARD_UP">KEYBOARD_UP</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of the keyboard upped key.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line404">line 404</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".MOUSE_DOWN_WHICH">MOUSE_DOWN_WHICH</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of the mouse downed key.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line386">line 386</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".MOUSE_LOCATION">MOUSE_LOCATION</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of the mouse pointer coordinates.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceVectorParameterSync">DeviceVectorParameterSync</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line380">line 380</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".MOUSE_UP_WHICH">MOUSE_UP_WHICH</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of the mouse upped key.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line392">line 392</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".MOUSE_WHEEL">MOUSE_WHEEL</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of the vertical scroll amount.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line398">line 398</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".TOUCH_END">TOUCH_END</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of ended touch point list on the touch surface.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line428">line 428</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".TOUCH_MOVE">TOUCH_MOVE</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of moving touch list on the touch surface.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line422">line 422</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+            
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id=".TOUCH_START">TOUCH_START</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Parameter of started touch point list on the touch surface.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line416">line 416</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".add_click_listener">add_click_listener<span class="signature">(element, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Register the listener on the click event. Callback is called on right
+after click on element (without 300ms delay).
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">DOM element.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Callback</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Callback.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line1079">line 1079</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".attach_param_cb">attach_param_cb<span class="signature">(device, param, cb<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Attach callback to the device parameter. It is called when parameter is changed.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Device object. Use
+<a href="module-input.html#.get_device_by_type_element">input.get_device_by_type_element</a> to obtain it.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Name of the device parameter.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cb</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~MouseLocationCallback">MouseLocationCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~MouseDownWhichCallback">MouseDownWhichCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~MouseUpWhichCallback">MouseUpWhichCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~MouseWheelCallback">MouseWheelCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~KeyboardDownCallback">KeyboardDownCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~KeyboardUpCallback">KeyboardUpCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~TouchStartCallback">TouchStartCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~TouchMoveCallback">TouchMoveCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~TouchEndCallback">TouchEndCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~GyroscopeQuatCallback">GyroscopeQuatCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~GyroscopeAnglesCallback">GyroscopeAnglesCallback</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last">Callback.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line777">line 777</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".can_use_device">can_use_device<span class="signature">(type)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Check if the device can be used.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~DeviceType">DeviceType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Device type.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Result of the check
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line686">line 686</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".check_enable_gamepad_indices">check_enable_gamepad_indices<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Check available gamepads indices.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Numeric array with indices
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line1029">line 1029</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".detach_param_cb">detach_param_cb<span class="signature">(device, param, cb<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Detach callback from the device parameter.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Device object. Use
+<a href="module-input.html#.get_device_by_type_element">input.get_device_by_type_element</a> to obtain it.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~DeviceParameterAsync">DeviceParameterAsync</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Name of the device parameter.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cb</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~MouseLocationCallback">MouseLocationCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~MouseDownWhichCallback">MouseDownWhichCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~MouseUpWhichCallback">MouseUpWhichCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~MouseWheelCallback">MouseWheelCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~KeyboardDownCallback">KeyboardDownCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~KeyboardUpCallback">KeyboardUpCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~TouchStartCallback">TouchStartCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~TouchMoveCallback">TouchMoveCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~TouchEndCallback">TouchEndCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~GyroscopeQuatCallback">GyroscopeQuatCallback</a></span>
+|
+
+<span class="param-type"><a href="module-input.html#~GyroscopeAnglesCallback">GyroscopeAnglesCallback</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last">Callback.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line797">line 797</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".disable_split_screen">disable_split_screen<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Disable "split screen" mode.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    "Split screen" mode is disabled.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated <dd><ul class="dummy"><li>Use <a href="module-screen.html#.exit_split_screen">module:screen.exit_split_screen</a> instead</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line948">line 948</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".enable_split_screen">enable_split_screen<span class="signature">(camobj)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Enable "split screen" mode.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>camobj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#Object3D">Object3D</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Camera 3D-object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    "Split screen" mode is enabled.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated <dd><ul class="dummy"><li>Use <a href="module-screen.html#.request_split_screen">module:screen.request_split_screen</a> instead</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line874">line 874</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_device_by_type_element">get_device_by_type_element<span class="signature">(type, element<span class="signature-attributes">nullable</span>)</span><span class="type-signature"> &rarr; (nullable) {Object}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get device object by associated device type and DOM element.
+If device is not available, then return null.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~DeviceType">DeviceType</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Device type.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                    &lt;nullable><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">HTML element to add event listeners to.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Device object.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line694">line 694</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_gamepad_orientation">get_gamepad_orientation<span class="signature">(gamepad_id, dest)</span><span class="type-signature"> &rarr; {<a href="global.html#Quat">Quat</a>}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get gamepad orientation.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gamepad_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gamepad identifier (Connected device number 0-3).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#Quat">Quat</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Destination vector.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Gamepad orientation.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="global.html#Quat">Quat</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line1021">line 1021</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_gamepad_position">get_gamepad_position<span class="signature">(gamepad_id, dest)</span><span class="type-signature"> &rarr; {<a href="global.html#Vec3">Vec3</a>}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get gamepad position.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gamepad_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gamepad identifier (Connected device number 0-3).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#Vec3">Vec3</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Destination vector.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Gamepad position.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="global.html#Vec3">Vec3</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line1013">line 1013</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_moved_gmpd_axis">get_moved_gmpd_axis<span class="signature">(gamepad_id)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get moved axis key value.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gamepad_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gamepad identifier (Connected device number 0-3).</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Moved axis key value.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line1006">line 1006</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_pressed_gmpd_btn">get_pressed_gmpd_btn<span class="signature">(gamepad_id)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get pressed button key value.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gamepad_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gamepad identifier (Connected device number 0-3).</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Pressed button key value.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line999">line 999</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_value_param">get_value_param<span class="signature">(device, param)</span><span class="type-signature"> &rarr; {number|boolean|null}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get parameter value.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Device object. Use
+<a href="module-input.html#.get_device_by_type_element">input.get_device_by_type_element</a> to obtain it.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~DeviceValueParameterSync">DeviceValueParameterSync</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the device value parameter.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Parameter value.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+|
+
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">null</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line759">line 759</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_vector_param">get_vector_param<span class="signature">(device, param, dest)</span><span class="type-signature"> &rarr; (nullable) {Float32Array}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get parameter vector.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Device object. Use
+<a href="module-input.html#.get_device_by_type_element">input.get_device_by_type_element</a> to obtain it.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-input.html#~DeviceVectorParameterSync">DeviceVectorParameterSync</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the device vector parameter.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Float32Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Destination vector.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Destination vector.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Float32Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line741">line 741</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".get_vr_controller_id">get_vr_controller_id<span class="signature">(controller_id)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Get gamepad id of VR controller.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>controller_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">VR controller id.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Gamepad id.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line1046">line 1046</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+// get the id of the first VR controller (among all gamepads)
+var vr_id = m_input.get_vr_controller_id(0);</code></pre>
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".register_device">register_device<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Register device. Right now it should be used for DEVICE_HMD.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated <dd><ul class="dummy"><li>Not needed anymore.</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line716">line 716</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".remove_click_listener">remove_click_listener<span class="signature">(element, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Unregister the listener registered with
+ input.add_click_listener.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">DOM element.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Callback</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Callback.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line1093">line 1093</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".request_fullscreen_hmd">request_fullscreen_hmd<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Request fullscreen mode.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated <dd><ul class="dummy"><li>Use <a href="module-screen.html#.request_fullscreen_hmd">module:screen.request_fullscreen_hmd</a> instead</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line825">line 825</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".reset_device">reset_device<span class="signature">(device)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Reset device. The device parameters values return to zero.
+Right now it should be used for DEVICE_HMD.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Device object. Use
+<a href="module-input.html#.get_device_by_type_element">input.get_device_by_type_element</a> to obtain it.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line725">line 725</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".set_gamepad_key">set_gamepad_key<span class="signature">(gamepad_id, btn, key)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Set gamepad button key value.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gamepad_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Connected gamepad number.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>btn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Button or axis identifier.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Button key value.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line972">line 972</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+            
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id=".switch_prevent_default">switch_prevent_default<span class="signature">(device, prevent_default)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    Switch triggering of the browser default actions for registered events.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Device object. Use
+<a href="module-input.html#.get_device_by_type_element">input.get_device_by_type_element</a> to obtain it.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>prevent_default</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Prevent default flag.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line704">line 704</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+</div>
+</div>
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id="~DeviceConfig">DeviceConfig</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Type of the names of the device config.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line73">line 73</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+            
+                
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id="~DeviceHMDType">DeviceHMDType</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    HMD type enum. Value of <a href="module-input.html#.HMD_WEBVR_TYPE">input.HMD_WEBVR_TYPE</a>.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line68">line 68</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+            
+                
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id="~DeviceParameterAsync">DeviceParameterAsync</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Type of the names of the asynchronous parameter of a device.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line63">line 63</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+            
+                
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id="~DeviceType">DeviceType</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Device type enum.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line651">line 651</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+            
+                
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id="~DeviceValueParameterSync">DeviceValueParameterSync</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Type of the names of the synchronous value parameter of a device.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line58">line 58</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+            
+                
+<div class="item_container">
+<div class="item_name">
+<h4 class="name" id="~DeviceVectorParameterSync">DeviceVectorParameterSync</h4>
+
+</div>
+
+<div class="item_description">
+
+<div class="description">
+    Type of the names of the synchronous vector parameter of a device.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Float32Array</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line53">line 53</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+</div>
+</div>
+
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~GyroscopeAnglesCallback">GyroscopeAnglesCallback<span class="signature">(angles)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the Euler angles of the gyroscope orientation corresponding
+to the <a href="module-input.html#.GYRO_ORIENTATION_ANGLES">GYRO_ORIENTATION_ANGLES</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>angles</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#Euler">Euler</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Euler angles (in radians) corresponding to the gyroscope 
+orientation.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line635">line 635</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var gyroscope_angles_cb = function(angles) {
+    console.log("Gyroscope orientation Euler angles are " + angles);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_GYRO);
+m_input.attach_param_cb(device, m_input.GYRO_ORIENTATION_ANGLES, gyroscope_angles_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~GyroscopeQuatCallback">GyroscopeQuatCallback<span class="signature">(quat)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the quaternion of the gyroscope orientation corresponding 
+to the <a href="module-input.html#.GYRO_ORIENTATION_QUAT">GYRO_ORIENTATION_QUAT</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>quat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#Quat">Quat</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Quaternion vector corresponding to the gyroscope orientation.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line620">line 620</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var gyroscope_quat_cb = function(quat) {
+    console.log("Gyroscope orientation quaternion is " + quat);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_GYRO);
+m_input.attach_param_cb(device, m_input.GYRO_ORIENTATION_QUAT, gyroscope_quat_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~KeyboardDownCallback">KeyboardDownCallback<span class="signature">(key_code)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the pressed keyboard button corresponding to the
+<a href="module-input.html#.KEYBOARD_DOWN">KEYBOARD_DOWN</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key_code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Number indicates button that was pressed on the
+keyboard (use constants KEY_* from module <a href="module-controls.html">controls</a>).</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line534">line 534</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var keyboard_down_cb = function(key_code) {
+    console.log("Pressed keyboard button: " + key_code);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_KEYBOARD);
+m_input.attach_param_cb(device, m_input.KEYBOARD_DOWN, keyboard_down_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~KeyboardUpCallback">KeyboardUpCallback<span class="signature">(key_code)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the released keyboard button corresponding to the
+<a href="module-input.html#.KEYBOARD_UP">KEYBOARD_UP</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key_code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Number indicates button that was released on the
+keyboard (use constants KEY_* from module <a href="module-controls.html">controls</a>).</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line550">line 550</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var keyboard_up_cb = function(key_code) {
+    console.log("Released keyboard button: " + key_code);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_KEYBOARD);
+m_input.attach_param_cb(device, m_input.KEYBOARD_UP, keyboard_up_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~MouseDownWhichCallback">MouseDownWhichCallback<span class="signature">(which)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the pressed mouse button corresponding to the
+<a href="module-input.html#.MOUSE_DOWN_WHICH">MOUSE_DOWN_WHICH</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>which</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Number indicates button that was pressed on the mouse
+(1 -- left button, 2 -- middle button, 3 -- right button).</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line487">line 487</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var mouse_down_which_cb = function(which) {
+    console.log("Pressed button: " + which);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_MOUSE);
+m_input.attach_param_cb(device, m_input.MOUSE_DOWN_WHICH, mouse_down_which_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~MouseLocationCallback">MouseLocationCallback<span class="signature">(location)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the mouse location corresponding to the
+<a href="module-input.html#.MOUSE_LOCATION">MOUSE_LOCATION</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>location</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Float32Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">List: the horizontal mouse coordinate, the
+vertical mouse coordinate.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line470">line 470</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var mouse_location_cb = function(location) {
+    console.log("The horizontal location: " + location[0]);
+    console.log("The vertical location: " + location[1]);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_MOUSE);
+m_input.attach_param_cb(device, m_input.MOUSE_LOCATION, mouse_location_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~MouseUpWhichCallback">MouseUpWhichCallback<span class="signature">(which)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the released mouse button corresponding to the
+<a href="module-input.html#.MOUSE_UP_WHICH">MOUSE_UP_WHICH</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>which</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Number indicates button that was released on the mouse
+(1 -- left button, 2 -- middle button, 3 -- right button).</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line503">line 503</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var mouse_up_which_cb = function(which) {
+    console.log("Released button: " + which);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_MOUSE);
+m_input.attach_param_cb(device, m_input.MOUSE_UP_WHICH, mouse_up_which_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~MouseWheelCallback">MouseWheelCallback<span class="signature">(delta)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the mouse scroll corresponding to the
+<a href="module-input.html#.MOUSE_WHEEL">MOUSE_WHEEL</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>delta</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The vertical mouse scroll amount.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line519">line 519</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var mouse_wheel_cb = function(delta) {
+    console.log("Scroll amount: " + delta);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_MOUSE);
+m_input.attach_param_cb(device, m_input.MOUSE_WHEEL, mouse_wheel_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~TouchEndCallback">TouchEndCallback<span class="signature">(touches)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the end of touch surface contacting corresponding to the
+<a href="module-input.html#.TOUCH_END">TOUCH_END</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>touches</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">List of touch objects corresponding to the
+contacting with the touch surface points.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line602">line 602</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var touch_end_cb = function(touches) {
+    for (var i = 0; i &lt; touches.length; ++i)
+         console.log("Touch contact " + touches[i].identifier + " has position" +
+                 + " x: " + touches[i].clientX + " y: " + touches[i].clientY);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_TOUCH);
+m_input.attach_param_cb(device, m_input.TOUCH_END, touch_end_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~TouchMoveCallback">TouchMoveCallback<span class="signature">(touches)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the contact moving on the touch surface corresponding to the
+<a href="module-input.html#.TOUCH_MOVE">TOUCH_MOVE</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>touches</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">List of touch objects corresponding to the
+contacting with the touch surface points.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line584">line 584</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var touch_move_cb = function(touches) {
+    for (var i = 0; i &lt; touches.length; ++i)
+         console.log("Touch contact " + touches[i].identifier + " has position" +
+                 + " x: " + touches[i].clientX + " y: " + touches[i].clientY);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_TOUCH);
+m_input.attach_param_cb(device, m_input.TOUCH_MOVE, touch_move_cb);</code></pre>
+
+
+</div>
+</div>
+            
+                
+<div class="item_container">
+<div class="item_name">
+
+    
+
+    <h4 class="name" id="~TouchStartCallback">TouchStartCallback<span class="signature">(touches)</span><span class="type-signature"></span></h4>
+
+    
+
+</div>
+<div class="item_description">
+
+<div class="description">
+    The callback for the start of touch surface contacting corresponding to the
+<a href="module-input.html#.TOUCH_START">TOUCH_START</a> param.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>touches</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">List of touch objects corresponding to the
+contacting with the touch surface points.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="extern_input.js.html">extern/input.js</a>, <a href="extern_input.js.html#line566">line 566</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var m_input = require("input");
+
+var touch_start_cb = function(touches) {
+    for (var i = 0; i &lt; touches.length; ++i)
+         console.log("Touch contact " + touches[i].identifier + " has position" +
+                 + " x: " + touches[i].clientX + " y: " + touches[i].clientY);
+};
+var device = m_input.get_device_by_type_element(m_input.DEVICE_TOUCH);
+m_input.attach_param_cb(device, m_input.TOUCH_START, touch_start_cb);</code></pre>
+
+
+</div>
+</div>
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-anchors.html">anchors</a></li><li><a href="module-animation.html">animation</a></li><li><a href="module-app.html">app</a></li><li><a href="module-armature.html">armature</a></li><li><a href="module-assets.html">assets</a></li><li><a href="module-camera.html">camera</a></li><li><a href="module-camera_anim.html">camera_anim</a></li><li><a href="module-config.html">config</a></li><li><a href="module-constraints.html">constraints</a></li><li><a href="module-container.html">container</a></li><li><a href="module-controls.html">controls</a></li><li><a href="module-data.html">data</a></li><li><a href="module-debug.html">debug</a></li><li><a href="module-fps.html">fps</a></li><li><a href="module-geometry.html">geometry</a></li><li><a href="module-gp_conf.html">gp_conf</a></li><li><a href="module-gyroscope.html">gyroscope</a></li><li><a href="module-hmd.html">hmd</a></li><li><a href="module-hmd_conf.html">hmd_conf</a></li><li><a href="module-hud.html">hud</a></li><li><a href="module-input.html">input</a></li><li><a href="module-lights.html">lights</a></li><li><a href="module-logic_nodes.html">logic_nodes</a></li><li><a href="module-main.html">main</a></li><li><a href="module-mat3.html">mat3</a></li><li><a href="module-mat4.html">mat4</a></li><li><a href="module-material.html">material</a></li><li><a href="module-math.html">math</a></li><li><a href="module-mixer.html">mixer</a></li><li><a href="module-mouse.html">mouse</a></li><li><a href="module-nla.html">nla</a></li><li><a href="module-npc_ai.html">npc_ai</a></li><li><a href="module-objects.html">objects</a></li><li><a href="module-particles.html">particles</a></li><li><a href="module-physics.html">physics</a></li><li><a href="module-preloader.html">preloader</a></li><li><a href="module-quat.html">quat</a></li><li><a href="module-rgb.html">rgb</a></li><li><a href="module-rgba.html">rgba</a></li><li><a href="module-scenes.html">scenes</a></li><li><a href="module-screen.html">screen</a></li><li><a href="module-screenshooter.html">screenshooter</a></li><li><a href="module-sfx.html">sfx</a></li><li><a href="module-storage.html">storage</a></li><li><a href="module-textures.html">textures</a></li><li><a href="module-time.html">time</a></li><li><a href="module-transform.html">transform</a></li><li><a href="module-tsr.html">tsr</a></li><li><a href="module-util.html">util</a></li><li><a href="module-vec3.html">vec3</a></li><li><a href="module-vec4.html">vec4</a></li><li><a href="module-version.html">version</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Blend4Web API Reference (generated by JSDoc 3.5.5 on Wed Jun 06 2018 11:49:10 GMT+0300 (MSK))
+    <a href="https://www.blend4web.com">www.blend4web.com</a>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+  (function() {
+    if (window.document.domain != "www.blend4web.com")
+      return;
+
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter24512171 = new Ya.Metrika({
+                    id:24512171,
+                    clickmap:false,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  })();
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/24512171" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
