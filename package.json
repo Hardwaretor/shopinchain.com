@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve & node shopinchaindb.js & node telegram.js",
-    "build": "ng build",
+    "build": "ng build & node shopinchaindb.js & node telegram.js",
     "test": "ng test",
     "lint": "eslint . --ext .ts",
     "e2e": "ng e2e"
