@@ -42,8 +42,6 @@
 
             ],
             "scripts": [
-              "telegram.js",
-              "shopinchaindb.js"
        
             ]
           },
@@ -113,8 +111,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "telegram.js",
-              "shopinchaindb.js"
+           
             ]
           }
         },
