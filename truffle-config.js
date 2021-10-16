@@ -36,7 +36,7 @@ module.exports = {
     },
 
     Goerli: {
-      provider: () => new HDWalletProvider(priv, `https://goerli.infura.io/v3/fbfa1c6cf206438ead1b60c402336c8d`),
+      provider: () => new HDWalletProvider(priv, `wss://goerli.infura.io/ws/v3/fbfa1c6cf206438ead1b60c402336c8d`),
       network_id: 5,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)

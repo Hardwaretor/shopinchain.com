@@ -8,8 +8,8 @@ module.exports = async function(deployer) {
 
   // Deploy ShopInChain
   await deployer.deploy(ShopInChain, token.address);
-  const ShopInChain = await ShopInChain.deployed()
+  const shopInChain = await ShopInChain.deployed()
 
   // Transfer all tokens to ShopInChain (1 billion)
-  await token.transfer(ShopInChain.address, '1000000000000000000000000000')
+  await token.transfer(shopInChain.address, '1000000000000000000000000000')
 };

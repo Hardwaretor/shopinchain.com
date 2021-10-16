@@ -3,7 +3,7 @@ pragma solidity >=0.4.22 <0.9.0;
 
 import "./Token.sol";
 
-contract EthSwap {
+contract ShopInChain {
   string public name = "ShopInChain VR Shop";
   Token public token;
   uint public rate = 100;
