@@ -2,6 +2,7 @@ const Token = artifacts.require("Token");
 const ShopInChain = artifacts.require("ShopInChain");
 
 module.exports = async function(deployer) {
+
   // Deploy Token
   await deployer.deploy(Token);
   const token = await Token.deployed()

@@ -27,7 +27,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     Pyrmont: {
-      provider: () => new HDWalletProvider(priv, `https://1pfdOuSorZyANa2XhDFavYNySyp:3d180030ece474204baa7580b4b042ff@eth2-beacon-pyrmont.infura.io`),
+      provider: () => new HDWalletProvider(priv, `wss://1pfdOuSorZyANa2XhDFavYNySyp:3d180030ece474204baa7580b4b042ff@eth2-beacon-pyrmont.infura.io`),
       network_id: 3,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)

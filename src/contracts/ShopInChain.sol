@@ -30,7 +30,7 @@ contract ShopInChain {
     // Calculate the number of tokens to buy
     uint tokenAmount = msg.value * rate;
 
-    // Require that EthSwap has enough tokens
+    // Require that ShopInChain has enough tokens
     require(token.balanceOf(address(this)) >= tokenAmount);
 
     // Transfer tokens to the user
@@ -47,7 +47,7 @@ contract ShopInChain {
     // Calculate the amount of Ether to redeem
     uint etherAmount = _amount / rate;
 
-    // Require that EthSwap has enough Ether
+    // Require that ShopInChain has enough Ether
     require(address(this).balance >= etherAmount);
 
     // Perform sale
