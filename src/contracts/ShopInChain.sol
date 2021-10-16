@@ -1,11 +1,10 @@
-// SPDX-License-Identifier: GPL-3.0
-
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
-import "./ShopInChain.sol";
+import "./Token.sol";
 
-contract ShopInChain {
-  string public name = "SHOP token install exchange";
+contract EthSwap {
+  string public name = "ShopInChain VR Shop";
   Token public token;
   uint public rate = 100;
 
@@ -31,7 +30,7 @@ contract ShopInChain {
     // Calculate the number of tokens to buy
     uint tokenAmount = msg.value * rate;
 
-    // Require that ShopInChain has enough tokens
+    // Require that EthSwap has enough tokens
     require(token.balanceOf(address(this)) >= tokenAmount);
 
     // Transfer tokens to the user
