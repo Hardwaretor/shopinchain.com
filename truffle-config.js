@@ -6,11 +6,11 @@ module.exports = {
   
   compilers: {
     solc: {
-      version: "0.7.0",    //<==========CHANGED THAT from "0.5.1"
+      version: "0.5.1",    //<==========CHANGED THAT from "0.5.1"
       docker: false,        
       settings: {         
        optimizer: {
-         enabled: false,
+         enabled: true,
          runs: 200
        },
        evmVersion: "byzantium"
@@ -52,6 +52,10 @@ module.exports = {
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
-    
    },
+
+ contracts_directory: './src/contracts/',
+ contracts_build_directory: './src/abis/'
+
+
  };
