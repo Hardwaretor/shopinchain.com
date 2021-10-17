@@ -19,6 +19,7 @@ import { GamesComponent } from './games/games.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NewsComponent } from './news/news.component';
 import { ParcelsComponent } from './parcels/parcels.component';
+import { PreSaleComponent } from './pre-sale/pre-sale.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ParcelsComponent } from './parcels/parcels.component';
     ProjectsComponent,
     NewsComponent,
     ParcelsComponent,
-    VRComponent
+    VRComponent,
+    PreSaleComponent
   ],
   imports: [
     AppRoutingModule,

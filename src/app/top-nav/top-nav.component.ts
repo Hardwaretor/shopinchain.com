@@ -11,7 +11,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class TopNavComponent implements OnInit {
 
-  menuItems = ['Home', 'Thrift Shop', 'NFT','Games','Projects','News'];
+  menuItems = ['Home', 'Pre-Sale','Thrift Shop', 'NFT','Games','Projects','News'];
 
   ngOnInit(): void {
   }

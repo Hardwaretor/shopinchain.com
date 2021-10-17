@@ -9,11 +9,13 @@ import { GamesComponent } from './games/games.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NewsComponent } from './news/news.component';
 import { ParcelsComponent } from './parcels/parcels.component';
+import { PreSaleComponent } from './pre-sale/pre-sale.component';
 
 const routes: Routes = [
 
-  { path: '',  redirectTo: '/home', pathMatch: 'full' },
+  { path: '*',  redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', pathMatch: 'full', component: HomeComponent},
+  { path: 'pre-sale', pathMatch: 'full', component: PreSaleComponent},
   //{ path: 'vr', pathMatch: 'full', component: VRComponent},
   { path: 'account', pathMatch: 'full', component: AccountComponent},
   { path: 'thrift', pathMatch: 'full', component: ThriftComponent},

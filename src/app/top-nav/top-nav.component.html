@@ -15,13 +15,18 @@
           Home
       </mat-list-item>
 
+      <mat-list-item [routerLink]="['/pre-sale']">
+        <mat-icon>swap_horizontal_circle </mat-icon>
+          Pre-Sale
+      </mat-list-item>
+
       <mat-list-item [routerLink]="['/account']">
         <mat-icon>account_balance_wallet </mat-icon>
           Wallet
       </mat-list-item>
 
       <mat-list-item [routerLink]="['/thrift']">
-        <mat-icon>shop </mat-icon>
+        <mat-icon>shop_two</mat-icon>
           Thrift Shop
       </mat-list-item>
 
@@ -31,7 +36,7 @@
       </mat-list-item>
 
       <mat-list-item [routerLink]="['/nft']">
-        <mat-icon>flutter_dash </mat-icon>
+        <mat-icon>gavel </mat-icon>
           NFT's
       </mat-list-item>
 
@@ -48,6 +53,16 @@
       <mat-list-item [routerLink]="['/news']">
         <mat-icon>new_releases </mat-icon>
           News
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/news']">
+        <mat-icon>group_work</mat-icon>
+          Road Map
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['/news']">
+        <mat-icon>rowing </mat-icon>
+          Team
       </mat-list-item>
 
     </mat-nav-list>
