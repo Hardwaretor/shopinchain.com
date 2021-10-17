@@ -7,17 +7,11 @@ import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import Tx from "ethereumjs-tx"
 
-const { priv } = require('../../../../secrets.json');
-
 declare let require: any;
 const Web3 = require('web3');
-const tokenAbi = require('../../../../build/contracts/Payment.json');
+const tokenAbi = require('../../../abis/ShopInChain.json');
 declare let window: any;
 const Tx = require('ethereumjs-tx');
-
-declare const Buffer
-const privBuffer = Buffer.from(priv, 'hex')
-console.log('Buffer: ', privBuffer)
 
 if (window.ethereum) {
   handleEthereum();
@@ -125,65 +119,6 @@ export class ContractService {
       });
     });
   }
-
-  transferEther(
-    originAccount,
-    destinyAccount,
-    amount,
-    _remarks,
-  ) {
-    const that = this;
-
-    return new Promise((resolve, reject) => {
-      let paymentContract = TruffleContract(tokenAbi);
-      paymentContract.setProvider(new Web3.providers.HttpProvider('https://goerli.infura.io/v3/fbfa1c6cf206438ead1b60c402336c8d')),
- 
-      paymentContract.deployed().then((instance) => {
-        return instance.nuevaTransaccion(
-          destinyAccount,
-          {
-            from: originAccount,
-            value: Web3.utils.toWei(amount, 'ether')
-          });
-      }).then((status) => {
-        if (status) {
-          return resolve({ status: true });
-        }
-
-                  // Sign the transaction
-    const tx = new Tx(status);
-    tx.sign(privBuffer);
-
-    const serializedTx = tx.serialize();
-    const raw = '0x' + serializedTx.toString('hex');
-
-    // Broadcast the transaction
-    const nuevaTransaccion = window.web3.eth.sendSignedTransaction(raw, (err, tx) => {
-        console.log(tx)
-        console.log('tx :', tx)
-        console.log('serializedTx :', serializedTx)
-        console.log('raw :', raw)
-    });
-
-      }).catch((error) => {
-        console.log(error);
-
-        return reject('Error transferring Ether');
-      });
-
-    });
-  }
-
-  failure(message: string) {
-    const snackbarRef = this.snackbar.open(message);
-    snackbarRef.dismiss()
-  }
-
-  succes() {
-    const snackbarRef = this.snackbar.open('Transaction complete successfully');
-    snackbarRef.dismiss()
-  }
-
   
 }
 

@@ -49,7 +49,7 @@ export class AccountComponent {
       this.getDetails(this.direction);
       this.getImage();
     }).catch((error: any) => {
-      this.contract.failure('Could\'t get the account data, please check if metamask is running correctly and refresh the page');
+
     });
   }
 
@@ -60,7 +60,7 @@ export class AccountComponent {
       this.balance2 = value;
       console.log(value);
     }).catch((error: any) => {
-      this.contract.failure('Could\'t get the account data, please check if metamask is running correctly and refresh the page');
+ 
     });
   }
   
@@ -77,22 +77,6 @@ export class AccountComponent {
  
   };
  
-  transferEther(event){
-    const that = this;
-
-    this.contract.transferEther(
-      this.originAccount,
-      this.destinyAccount,
-      this.amount,
-      this.remarks
-    ).then(function(){
-      that.initAndDisplayAccount();
-    }).catch(function(error){
-      console.log(error);
-      that.initAndDisplayAccount();
-    });
-  }
-  
 
 }
 
