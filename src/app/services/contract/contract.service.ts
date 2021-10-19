@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Subject } from 'rxjs';
-import * as TruffleContract from 'truffle-contract';
+
 
 import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
-import Tx from "ethereumjs-tx"
+
 
 declare let require: any;
 const Web3 = require('web3');
