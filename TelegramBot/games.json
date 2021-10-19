@@ -1,0 +1,76 @@
+{
+    "appointments" : [
+
+        {
+            "id": 2101,
+            "name": "Electron | In Focus",
+            "net": "October 28, 2020 21:14:00 UTC",
+            "tbdtime": 0,
+            "tbddate": 0
+        },
+        {
+            "id": 1312,
+            "name": "Atlas V 531 | NROL-101",
+            "net": "November 3, 2020 22:30:00 UTC",
+            "tbdtime": 0,
+            "tbddate": 0
+        },
+        {
+            "id": 1525,
+            "name": "Falcon 9 Block 5 | GPS III SV04",
+            "net": "November 5, 2020 23:24:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        },
+        {
+            "id": 1674,
+            "name": "Long March 6  | Satellogic x 13",
+            "net": "November 6, 2020 00:00:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        },
+        {
+            "id": 1878,
+            "name": "PSLV-DL | RISAT-2BR2",
+            "net": "November 6, 2020 09:30:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        },
+        {
+            "id": 1390,
+            "name": "Falcon 9 Block 5 | Sentinel-6 Michael Freilich",
+            "net": "November 10, 2020 19:31:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        },
+        {
+            "id": 1643,
+            "name": "Vega | Ingenio (SEOSat) & Taranis",
+            "net": "November 14, 2020 01:52:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        },
+        {
+            "id": 1657,
+            "name": "Falcon 9 Block 5 | SpX USCV-1 (NASA Crew Flight 1)",
+            "net": "November 15, 2020 00:49:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        },
+        {
+            "id": 1687,
+            "name": "Soyuz 2.1b\/Fregat-M | Gonets-M30, Gonets-M31, Gonets-M32",
+            "net": "November 16, 2020 00:00:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        },
+        {
+            "id": 1221,
+            "name": "Long March 5  | Chang'e 5",
+            "net": "November 24, 2020 00:00:00 UTC",
+            "tbdtime": 1,
+            "tbddate": 1
+        }
+    ]
+
+ }
