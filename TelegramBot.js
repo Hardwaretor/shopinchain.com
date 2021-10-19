@@ -1,7 +1,7 @@
 
 const Bot = require('node-telegram-bot-api');
 const request = require('request');
-const token = require('./token');
+const token = require('./TelegramBot/token.js');
 const url = 'https://shopinchain/djs';
 const trigger = `DJs schedule`;
 const trigger2 = `Cinema schedule`;
@@ -117,10 +117,10 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const port = process.env.PORT || 4001;
-const djs = require('./djs.json');
-const cinema = require('./cinema.json');
-const games = require('./games.json');
-const nfts = require('./nfts.json');
+const djs = require('./TelegramBot/djs.json');
+const cinema = require('./TelegramBot/cinema.json');
+const games = require('./TelegramBot/games.json');
+const nfts = require('./TelegramBot/nfts.json');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
